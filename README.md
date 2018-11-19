@@ -22,15 +22,15 @@
 |member_id|integer|null: false, foreign_key: true|
 
 ### Association
-- has_many :members
+- has_many  :users, though: :members
 - has_many :messages
 
 
 ## membersテーブル
 |Column|Type|Options|
 |--------|-------|-------------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true, index: true|
+|group_id|integer|null: false, foreign_key: true, index: true|
 
 ### Association
 - belongs_to :user
@@ -46,6 +46,6 @@
 |member_id|integer|foreign_key: true|
 
 ### Association
-- has_many :members
+- has_many :groups, through: :members
 - has_many :messages
 
