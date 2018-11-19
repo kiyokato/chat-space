@@ -11,6 +11,11 @@
 
 
 ## groupsテーブル
+|Column|Type|Options|
+|--------|-------|-------------|
+|name|string|null: false|
+|message_id|integer|null: false, foreign_key: true|
+|member_id|integer|null: false, foreign_key: true|
 
 
 ## membersテーブル
