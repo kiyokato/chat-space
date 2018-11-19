@@ -21,6 +21,10 @@
 |message_id|integer|null: false, foreign_key: true|
 |member_id|integer|null: false, foreign_key: true|
 
+### Association
+- has_many :members
+- has_many :messages
+
 
 ## membersテーブル
 |Column|Type|Options|
