@@ -45,3 +45,7 @@
 |password|string|null: false|
 |member_id|integer|foreign_key: true|
 
+### Association
+- has_many :members
+- has_many :messages
+
